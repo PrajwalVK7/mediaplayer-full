@@ -20,15 +20,16 @@ function Home() {
                   <div className="watch-history mt-4">
                      <Link className="d-flex justify-content-center" to={'/history'} style={{ textDecoration: "none", fontSize: "30px", color: "white" }}>
                         Watch History</Link>
-                     <div className="d-flex justify-content-center mt-3">
+                     <div className=" mt-3">
                         <Category />
                      </div>
                   </div>
                </Col>
             </Row>
             <div className="container ">
+
                <h4>All videos</h4>
-               <View  uploadVideoStatus={uploadVideoStatus} />
+               <View uploadVideoStatus={uploadVideoStatus} />
             </div>
 
 

@@ -37,7 +37,7 @@ function Add({ setUploadVideoStatus }) {
         else {
             const response = await uploadAllVideo(video)
             console.log(response)
-            if (response.status == 201) {
+            if (response.status === 201) {
                 toast.success(`${response.data.caption} is succesfullty uploaded`)
                 setUploadVideoStatus(response.data)
                 handleClose()
